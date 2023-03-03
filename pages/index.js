@@ -1,6 +1,10 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube} from 'react-icons/ai';
+import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub} from 'react-icons/ai';
+import Image from "next/image";
+import avatar from "../public/cartoonavatar.png";
+import design from "../public/design.png";
+import code from "../public/code.png";
 
 export default function Home() {
   return (
@@ -11,26 +15,53 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-tl from-stone-900 to-slate-900 px-10 ">
+      <main className="bg-gradient-to-br from-slate-200 to-gray-400 px-10 text-black">
         <section className="h-screen">
           <nav className="p-10 mb-12 flex justify-between">
-            <h1 className="text-4xl font-oswald font-normal bg-gradient-to-t from-black to-white text-transparent bg-clip-text">DUSTINLONG.TECH</h1>
+            <h1 className="text-4xl font-oswald font-normal bg-gradient-to-t from-slate-200 to-emerald-800 text-transparent bg-clip-text">DUSTINLONG.TECH</h1>
             <ul className="flex items-center">
               <li><BsFillMoonStarsFill className="cursor-pointer text-2xl"/>
               </li>
-              <li><a className="bg-gradient-to-r from-indigo-600 to-blue-500 text-white  font-oswald px-4 py-2 rounded-md ml-8 font-light" href="#">Resume</a></li>
+              <li><a className="bg-gradient-to-b from-emerald-900 to-emerald-500 text-white text-lg font-oswald px-5 py-2 rounded-lg ml-8 font-light" href="#">Resume</a></li>
             </ul>
             </nav>
-            <div>
-              <h2 className="font-oswald text-xl">Dustin Long</h2>
-              <h3 className="font-oswald font-thin">Fullstack/DevOps Engineer</h3>
-              <p className="font-oswald text-xl">
+            <div className="text-center p-10">
+              <h2 className="font-oswald text-5xl py-2 text-emerald-900">Dustin Long</h2>
+              <h3 className="font-oswald font-medium py-2">Fullstack/DevOps Engineer</h3>
+              <p className="font-oswald text-lg py-5 leading-8 text-gray-700">
                 Using a business-minded approach to empower and enable your team to usher in a new era of innovation. The time is now.
               </p>
             </div>
-            <div>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
               <AiFillLinkedin />
+              <AiFillGithub />
             </div>
+            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-20 overflow-hidden">
+               <Image src={avatar} layout="fill" objectFit="cover"/>
+            </div>
+        </section>
+        <section className="font-oswald text-gray-600">
+          <div>
+            <h2 className="text-3xl py-10 text-center">Let me tell you a little more about myself.</h2>
+            <h3>
+              I guess we should start from the beginning... 
+            </h3>
+            <p>
+              As long as I can remember, I've loved technology. My grandmother worked at Southern Bell (which through time transformed into what we know as AT&T) and loved adopting new technology and learning in general. I guess I have her to thank for my inquisitive nature. She taught me how to how to use a computer before I could tie my shoes (that's not an exaggeration) and from there it was history. From explaining to my parents as a nine year old that we needed a new graphics card for vertex shaders or installing Windows 7 with 1GB of RAM, I was probably a bit of a nuisance. Nonetheless, I think it's paid off in the long run.
+            </p>
+            <p>
+              For the longest time I was the extended family's tech support agent, with anything from data transfers and OS installations to replacing routers and virus removal. Over time, my "clientele" grew and before I knew it I was performing break-fix work for a large group of family friends, acquantances and even our neighbor. I taught myself a bit of graphic design and then taught my high school "Intro to modern computing" classmates how to use <span className="text-emerald-700">Photoshop</span>, <span className="text-emerald-700">Illustrator</span> and <span className="text-emerald-700">Premiere Pro.</span>
+            </p>
+          </div>
+          <div>
+            <div className="">
+              <Image src={design} width={100}/>
+              <h3>
+                more sample text (trust me, i know)
+              </h3>
+              <Image src={code} width={100}/>
+            </div>
+          </div>
         </section>
         
       </main>
