@@ -15,7 +15,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-br from-slate-200 to-gray-400 px-10 text-black">
+      <main className="bg-gradient-to-br from-lime-100 to-neutral-400 px-10 text-black">
         <section className="h-screen">
           <nav className="p-10 mb-12 flex justify-between">
             <h1 className="text-4xl font-oswald font-normal bg-gradient-to-t from-slate-200 to-emerald-800 text-transparent bg-clip-text">DUSTINLONG.TECH</h1>
