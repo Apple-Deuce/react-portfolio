@@ -111,25 +111,25 @@ a {
 
 @font-face{
   font-family: "overwave";
-  src: url("../public/overwave.otf");
+  src: url("../public/Overwave.otf");
 }
 
 @font-face{
   font-family: "antenna";
-  src: url("../public/antenna.ttf");
+  src: url("../public/Antenna.ttf");
 }
 
 @font-face{
   font-family: "legendday";
-  src: url("../public/legendday.ttf");
+  src: url("../public/Legendday.ttf");
 }
 
 @font-face{
   font-family: "themodernchaos";
-  src: url("../public/the modern chaos.ttf");
+  src: url("../public/The Modern Chaos.ttf");
 }
 
 @font-face{
   font-family: "oswald";
-  src: url("../public/oswald.ttf");
+  src: url("../public/Oswald.ttf");
 }
