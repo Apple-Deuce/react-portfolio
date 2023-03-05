@@ -36,12 +36,12 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden"
+            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden pb-15"
             style={{ojectFit:"contain"}}>
                <Image src={avatar} />
             </div>
         </section>
-        <section className="font-oswald text-gray-600 pt-6">
+        <section className="font-oswald text-gray-600 pt-10">
           <div>
             <h2 className="text-3xl py-10 text-center">Let me tell you a little more about myself.</h2>
             <h3>
