@@ -27,7 +27,7 @@ export default function Home() {
             </nav>
             <div className="text-center p-10">
               <h2 className="font-oswald text-5xl py-2 text-emerald-900">Dustin Long</h2>
-              <h3 className="font-oswald font-medium py-2">Fullstack/DevOps Engineer</h3>
+              <h3 className="font-oswald font-medium py-2">Fullstack Engineer</h3>
               <p className="font-oswald text-lg py-5 leading-8 text-gray-700">
                 Using a business-minded approach to empower and enable your team to usher in a new era of innovation. The time is now.
               </p>
@@ -36,11 +36,12 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-20 overflow-hidden">
-               <Image src={avatar} layout="fill" objectFit="cover"/>
+            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden"
+            style={{ojectFit:"contain"}}>
+               <Image src={avatar} />
             </div>
         </section>
-        <section className="font-oswald text-gray-600">
+        <section className="font-oswald text-gray-600 pt-6">
           <div>
             <h2 className="text-3xl py-10 text-center">Let me tell you a little more about myself.</h2>
             <h3>
@@ -54,12 +55,19 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <div className="">
-              <Image src={design} width={100}/>
-              <h3>
-                more sample text (trust me, i know)
+            <div className="text-center">
+              <div style={{
+                display:"flex",
+                justifyContent: "center",
+              }}><Image src={code} width={100}/></div>
+              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+                My Skills
               </h3>
-              <Image src={code} width={100}/>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <Image src={design} width={100}/>
             </div>
           </div>
         </section>
