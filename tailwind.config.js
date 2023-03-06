@@ -17,4 +17,7 @@ module.exports = {
     },
   },
   plugins: [],
+  images: {
+    minimumCacheTTL: 60,
+  },
 }

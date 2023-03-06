@@ -20,11 +20,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-lime-50 dark:bg-gray-900 px-5 md:px-20 text-black" >
-        <section className="h-screen mb-40 dark:bg-gray-900">
+      <main className="bg-lime-50 dark:bg-gray-900 px-5 text-black" >
+        <section className="min-h-full mb-10 dark:bg-gray-900">
           <nav className="p-10 mb-12 flex justify-between">
             <h1 className="text-2xl font-oswald font-normal bg-gradient-to-t from-slate-200 to-emerald-800 text-transparent bg-clip-text md:text-4xl pr-5">DUSTINLONG.TECH</h1>
-            <ul className="flex items-center">
+            <ul className="flex items-center">"
               <li><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="cursor-pointer text-2xl dark:fill-white"/>
               </li>
               <li><a className="bg-gradient-to-b from-emerald-900 to-emerald-500 text-white text-lg font-oswald px-5 py-2 rounded-lg ml-8 font-light" href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf">Resume</a></li>
@@ -33,7 +33,7 @@ export default function Home() {
             <div className="text-center p-10">
               <h2 className="font-oswald text-6xl py-2 text-emerald-900">Dustin Long</h2>
               <h3 className="font-oswald text-lg font-semibold py-2 dark:text-slate-100">Fullstack Engineer</h3>
-              <p className="font-oswald text-lg py-5 leading-8 text-gray-800 md:text-4xl md:leading-relaxed 2xl:m-60 dark:text-slate-200">
+              <p className="font-oswald text-lg py-5 leading-8 text-gray-800 md:text-4xl md:leading-relaxed 2xl:m-10 dark:text-slate-200">
                 Using a business-minded approach to empower new levels of growth and efficiency. 4+ years experience successfully leading cross-functional projects and teams in innovative, business-driven
 environments. 
               </p>
@@ -43,29 +43,29 @@ environments.
               <a href="https://github.com/Apple-Deuce"><AiFillGithub /></a>
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96"
-            style={{ojectFit:"contain"}}>
+            style={{objectFit:"contain"}}>
                <Image src={avatar} alt=""/>
             </div>
         </section>
-        <section className="font-oswald text-gray-600">
+        <section className="font-oswald text-gray-600 min-h-full">
           <div>
             <h3 className="text-2xl py-5 leading-8 text-gray-800 md:text-4xl dark:text-emerald-900">Let me tell you a little more about myself.</h3>
             <p className="text-lg py-5 leading-8 text-gray-800 md:text-2xl dark:text-emerald-900">
               I guess we should start from the beginning... 
             </p>
-            <p className="text-lg py-10 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
+            <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
               As long as I can remember, I've loved technology. My grandmother worked at Southern Bell (which through time transformed into what we know as AT&T) and loved adopting new technology and learning in general. I guess I have her to thank for my inquisitive nature. She taught me how to how to use a computer before I could tie my shoes (that's not an exaggeration) and from there it was history. From explaining to my parents as a nine year old that we needed a new graphics card for vertex shaders or installing Windows 7 with 1GB of RAM, I was probably a bit of a nuisance. Nonetheless, I think it's paid off in the long run.
             </p>
-            <p className="text-lg py-10 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
+            <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
               For the longest time I was the extended family's tech support agent, with anything from data transfers and OS installations to replacing routers and virus removal. Over time, my "clientele" grew and before I knew it I was performing break-fix work for a large group of family friends, acquantances and even our neighbor. I taught myself a bit of graphic design and then taught my high school "Intro to modern computing" classmates how to use <span className="text-emerald-700">Photoshop</span>, <span className="text-emerald-700">Illustrator</span> and <span className="text-emerald-700">Premiere Pro.</span>
             </p>
-            <p className="text-lg py-10 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
+            <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
                Fast forward to present day, I've been able to use my interest in how things work to my advantage. I've developed my skills both professionaly and personally in a wide array of environments with some truly remarkable friends and colleagues. I've worked anywhere from small, family-owned business to medium-sized MSP's and even a Fortune 500 company. All along the way I've been polishing my skills and working to become a well-rounded engineer.
             </p>
-            <p className="text-lg py-10 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
+            <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
             I am extremely passionate about creating robust and scalable web applications, scripting processes, documenting technology and it's capabilities, and so much more. I enjoy having to adapt to meet new requirements or expectations, or having to learn a new technology in order to solve a problem. In my opinion, the key to success in this field is to stay curious and learn something new every chance you get, which is something I am dedicated to doing every day. I love to explore new tools and frameworks to enhance my skills and take my capabilities to the next level.
             </p>
-            <p className="text-lg py-10 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
+            <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
             I can't wait to share my journey with you. Thank you for taking the time to visit my website, and I look forward to connecting with you soon!
             </p>
           </div>
