@@ -3,13 +3,7 @@ import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillTwitterCircle, AiFillLinkedin, AiFillYoutube, AiFillGithub} from 'react-icons/ai';
 import Image from "next/image";
 import avatar from "../public/cartoonavatar.png";
-import design from "../public/design.png";
 import code from "../public/code.png";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
-import web5 from "../public/web5.png";
 import cloud from "../public/cloud.png";
 import blocks from "../public/buildingblocks.png";
 import learning from "../public/learning.png";
@@ -50,7 +44,7 @@ environments.
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96"
             style={{ojectFit:"contain"}}>
-               <Image src={avatar} />
+               <Image src={avatar} alt=""/>
             </div>
         </section>
         <section className="font-oswald text-gray-600">
@@ -80,7 +74,7 @@ environments.
               <div style={{
                 display:"flex",
                 justifyContent: "center",
-              }}><Image src={code} width={100}/></div>
+              }}><Image src={code} width={100} alt=""/></div>
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Languages/Frameworks/Libraries
               </h3>
@@ -107,7 +101,7 @@ environments.
               <div style={{
                 display:"flex",
                 justifyContent: "center",
-              }}><Image src={cloud} width={100}/></div>
+              }}><Image src={cloud} width={100} alt=""/></div>
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Software & Technology
               </h3>
@@ -134,7 +128,7 @@ environments.
               <div style={{
                 display:"flex",
                 justifyContent: "center",
-              }}><Image src={blocks} width={100}/></div>
+              }}><Image src={blocks} width={100} alt=""/></div>
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Technical & Soft Skills
               </h3>
@@ -158,7 +152,7 @@ environments.
               <div style={{
                 display:"flex",
                 justifyContent: "center",
-              }}><Image src={learning} width={100}/></div>
+              }}><Image src={learning} width={100} alt=""/></div>
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Certifications
               </h3>

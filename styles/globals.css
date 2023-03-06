@@ -105,31 +105,6 @@ a {
 }
 
 @font-face{
-  font-family: "burtons";
-  src: url("../public/Burtons.otf");
-}
-
-@font-face{
-  font-family: "overwave";
-  src: url("../public/Overwave.otf");
-}
-
-@font-face{
-  font-family: "antenna";
-  src: url("../public/Antenna.ttf");
-}
-
-@font-face{
-  font-family: "legendday";
-  src: url("../public/Legendday.ttf");
-}
-
-@font-face{
-  font-family: "themodernchaos";
-  src: url("../public/The Modern Chaos.ttf");
-}
-
-@font-face{
   font-family: "oswald";
   src: url("../public/Oswald.ttf");
 }

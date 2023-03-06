@@ -12,12 +12,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        burtons: "burtons",
-        overwave: "overwave",
-        antenna: "antenna",
-        themodernchaos: "themodernchaos",
-        legendday: "legendday",
-        oswald: "oswald"
+        oswald: "oswald",
       },
     },
   },
