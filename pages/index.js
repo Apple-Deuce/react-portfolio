@@ -5,6 +5,11 @@ import Image from "next/image";
 import avatar from "../public/cartoonavatar.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
+import web1 from "../public/web1.png";
+import web2 from "../public/web2.png";
+import web3 from "../public/web3.png";
+import web4 from "../public/web4.png";
+import web5 from "../public/web5.png";
 
 export default function Home() {
   return (
@@ -15,7 +20,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="bg-gradient-to-br from-lime-100 to-neutral-400 px-10 text-black">
+      <main className="bg-gradient-to-br from-lime-100 to-neutral-400 px-10 md:px-20 text-black">
         <section className="h-screen">
           <nav className="p-10 mb-12 flex justify-between">
             <h1 className="text-4xl font-oswald font-normal bg-gradient-to-t from-slate-200 to-emerald-800 text-transparent bg-clip-text">DUSTINLONG.TECH</h1>
@@ -26,8 +31,8 @@ export default function Home() {
             </ul>
             </nav>
             <div className="text-center p-10">
-              <h2 className="font-oswald text-5xl py-2 text-emerald-900">Dustin Long</h2>
-              <h3 className="font-oswald font-medium py-2">Fullstack Engineer</h3>
+              <h2 className="font-oswald text-6xl py-2 text-emerald-900">Dustin Long</h2>
+              <h3 className="font-oswald text-lg font-semibold py-2">Fullstack Engineer</h3>
               <p className="font-oswald text-lg py-5 leading-8 text-gray-700">
                 Using a business-minded approach to empower and enable your team to usher in a new era of innovation. The time is now.
               </p>
@@ -36,17 +41,17 @@ export default function Home() {
               <AiFillLinkedin />
               <AiFillGithub />
             </div>
-            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden pb-15"
+            <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96"
             style={{ojectFit:"contain"}}>
                <Image src={avatar} />
             </div>
         </section>
-        <section className="font-oswald text-gray-600 pt-10">
+        <section className="font-oswald text-gray-600">
           <div>
-            <h2 className="text-3xl py-10 text-center">Let me tell you a little more about myself.</h2>
-            <h3>
+            <h3 className="text-3xl py-1">Let me tell you a little more about myself.</h3>
+            <p>
               I guess we should start from the beginning... 
-            </h3>
+            </p>
             <p>
               As long as I can remember, I've loved technology. My grandmother worked at Southern Bell (which through time transformed into what we know as AT&T) and loved adopting new technology and learning in general. I guess I have her to thank for my inquisitive nature. She taught me how to how to use a computer before I could tie my shoes (that's not an exaggeration) and from there it was history. From explaining to my parents as a nine year old that we needed a new graphics card for vertex shaders or installing Windows 7 with 1GB of RAM, I was probably a bit of a nuisance. Nonetheless, I think it's paid off in the long run.
             </p>
@@ -54,8 +59,27 @@ export default function Home() {
               For the longest time I was the extended family's tech support agent, with anything from data transfers and OS installations to replacing routers and virus removal. Over time, my "clientele" grew and before I knew it I was performing break-fix work for a large group of family friends, acquantances and even our neighbor. I taught myself a bit of graphic design and then taught my high school "Intro to modern computing" classmates how to use <span className="text-emerald-700">Photoshop</span>, <span className="text-emerald-700">Illustrator</span> and <span className="text-emerald-700">Premiere Pro.</span>
             </p>
           </div>
-          <div>
-            <div className="text-center">
+          <div className="lg:flex gap-10">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10">
+              <div style={{
+                display:"flex",
+                justifyContent: "center",
+              }}><Image src={code} width={100}/></div>
+              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+                Languages/Frameworks/Libraries
+              </h3>
+              <div className="md:grid grid-cols-2">
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">Javascript</p>
+              <p className="text-gray-800 py-1">SQL</p>
+              <p className="text-gray-800 py-1">CSS</p>
+              <p className="text-gray-800 py-1">Go</p>
+              <p className="text-gray-800 py-1">test</p>
+              <p className="text-gray-800 py-1">test</p>
+              <p className="text-gray-800 py-1">test</p>
+              </div>
+            </div>
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10">
               <div style={{
                 display:"flex",
                 justifyContent: "center",
@@ -67,7 +91,31 @@ export default function Home() {
               <p className="text-gray-800 py-1">Javascript</p>
               <p className="text-gray-800 py-1">React</p>
               <p className="text-gray-800 py-1">CSS</p>
-              <Image src={design} width={100}/>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p>
+              I guess we should start from the beginning... 
+            </p>
+          </div>
+          <div>
+            <div>
+              <Image src={web1}></Image>
+            </div>
+            <div>
+              <Image src={web2}></Image>
+            </div>
+            <div>
+              <Image src={web3}></Image>
+            </div>
+            <div>
+              <Image src={web4}></Image>
+            </div>
+            <div>
+              <Image src={web5}></Image>
             </div>
           </div>
         </section>
