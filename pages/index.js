@@ -25,7 +25,8 @@ export default function Home() {
 {/* main container */}
 
       <main className="bg-lime-50 dark:bg-gray-900 px-5 text-black font-oswald" >
-        <section className="min-h-full mb-10 dark:bg-gray-900">
+        
+        
 
 {/* nav */}
 
@@ -41,8 +42,11 @@ export default function Home() {
   </div>
 </nav>
 
-{/* title section (initial view) */}
+{/* Container div for page scroll effect */}
+<div class="container">
 
+{/* title section (initial view) */}
+<section class="one" className="min-h-full mb-10 dark:bg-gray-900">
             <div className="text-center pt-56 lg:pt-36 pb-10">
               <h2 className="font-oswald text-6xl py-2 text-emerald-900">Dustin Long</h2>
               <h3 className="font-oswald text-lg font-semibold py-2 dark:text-slate-100">Fullstack Engineer</h3>
@@ -62,7 +66,7 @@ environments.
         </section>
 
 {/*About Me*/}
-<section id="about">
+<section  class="two" id="about">
 <div className="bg-lime-50 dark:bg-gray-900 pt-56 md:pt-20 min-h-screen">
                 <h3 className="text-2xl py-5 leading-8 text-gray-800 md:text-4xl dark:text-emerald-900 m-5">Let me tell you a little more about myself.</h3>
                 <p className="text-lg py-5 leading-8 text-gray-800 md:text-2xl dark:text-emerald-900 m-5">
@@ -88,7 +92,7 @@ environments.
 
 {/* Skills and Credentials Grid section */}
 
-        <section className="font-oswald text-gray-600 min-h-full">
+        <section  class="three" className="font-oswald text-gray-600 min-h-full">
           
           <div className="xl:flex gap-10" style={{justifyContent: "center"}}>
           <div className="text-center shadow-2xl p-10 rounded-xl my-10">
@@ -99,23 +103,23 @@ environments.
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Software & Technology
               </h3>
-              <div className="grid grid-cols-2">
-              <p className="text-gray-800 py-1 dark:text-slate-200">GCP</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Azure</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">AWS</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Docker</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Kubernetes</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">RESTful APIs</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">GraphQL APIs</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">NoSQL</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">MSSQL</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">CI/CD</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Linux</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">MacOS</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Windows</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">SDLC</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">MDM Solutions</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">ServiceNow</p>
+              <div className="grid grid-cols-2 text-gray-800 dark:text-slate-200">
+              <p className="py-1">GCP</p>
+              <p className="py-1">Azure</p>
+              <p className="py-1">AWS</p>
+              <p className="py-1">Docker</p>
+              <p className="py-1">Kubernetes</p>
+              <p className="py-1">RESTful APIs</p>
+              <p className="py-1">GraphQL APIs</p>
+              <p className="py-1">NoSQL</p>
+              <p className="py-1">MSSQL</p>
+              <p className="py-1">CI/CD</p>
+              <p className="py-1">Linux</p>
+              <p className="py-1">MacOS</p>
+              <p className="py-1">Windows</p>
+              <p className="py-1">SDLC</p>
+              <p className="py-1">MDM Solutions</p>
+              <p className="py-1">ServiceNow</p>
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10">
@@ -126,23 +130,23 @@ environments.
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Languages/Frameworks/Libraries
               </h3>
-              <div className="grid grid-cols-2">
-              <p className="text-gray-800 py-1 dark:text-slate-200">Python</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Javascript</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">SQL</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">CSS</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Go</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Gorilla/Mux</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">React.js</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Node.js</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Next.js</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Colly</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Scrapy</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Fernet</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">C#</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Tailwind</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Bash/Shell</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Powershell</p>
+              <div className="grid grid-cols-2 text-gray-800 dark:text-slate-200">
+              <p className="py-1">Python</p>
+              <p className="py-1">Javascript</p>
+              <p className="py-1">SQL</p>
+              <p className="py-1">CSS</p>
+              <p className="py-1">Go</p>
+              <p className="py-1">Gorilla/Mux</p>
+              <p className="py-1">React.js</p>
+              <p className="py-1">Node.js</p>
+              <p className="py-1">Next.js</p>
+              <p className="py-1">Colly</p>
+              <p className="py-1">Scrapy</p>
+              <p className="py-1">Fernet</p>
+              <p className="py-1">C#</p>
+              <p className="py-1">Tailwind</p>
+              <p className="py-1">Bash/Shell</p>
+              <p className="py-1">Powershell</p>
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10">
@@ -153,16 +157,15 @@ environments.
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Technical & Soft Skills
               </h3>
-              <div className="grid">
-              <p className="text-gray-800 py-1 dark:text-slate-200">Adaptable</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Personable</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Emotial Awareness</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Technical Documentation</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Knowledge Transfer</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Object-Oriented Analysis/Design</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Business & Tech Communication</p>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Project Management</p>
-              
+              <div className="grid text-gray-800 py-1 dark:text-slate-200">
+              <p className="py-1">Adaptable</p>
+              <p className="py-1">Personable</p>
+              <p className="py-1">Emotial Awareness</p>
+              <p className="py-1">Technical Documentation</p>
+              <p className="py-1">Knowledge Transfer</p>
+              <p className="py-1">Object-Oriented Analysis/Design</p>
+              <p className="py-1">Business & Tech Communication</p>
+              <p className="py-1">Project Management</p>
               </div>
             </div>
             <div className="text-center shadow-2xl p-10 rounded-xl my-10">
@@ -173,20 +176,20 @@ environments.
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
                 Certifications
               </h3>
-              <div className="grid">
+              <div className="grid text-gray-800 py-1 dark:text-slate-200">
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2405390?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
+              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
               </a>
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2365223?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
+              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
               </a>
               <a href="https://courses.edx.org/certificates/e1bc642064304e199a552de95ebe6f8e">
-              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
+              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
               </a>
               <a href="https://verify.skilljar.com/c/wzvspbdfxg6z">
-              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Jamf Certified Associate - Jamf</p>
+              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Jamf Certified Associate - Jamf</p>
               </a>
-              <p className="text-gray-800 py-1 dark:text-slate-200">Google Cloud Certified - GSuite - Google</p>
+              <p className="py-1">Google Cloud Certified - GSuite - Google</p>
               </div>
             </div>
           </div>
@@ -196,27 +199,12 @@ environments.
 
         <section class="bg-lime-50 dark:bg-gray-900 h-screen pt-56 md:pt-20 shadow-2xl p-10 rounded-xl my-10">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-emerald-400 font-oswald">Let's Talk!</h2>
+                    <h2 class="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-emerald-400 font-oswald">Let's Talk!</h2>
                     <p class="pt-10 mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-2xl font-oswald">Interested to know more about me? Think I could help on your project? Want to talk about video games? Let me know.</p>
-                    {/* <form action="#" class="space-y-8">
-                        <div>
-                            <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="user@domain.com" required />
-                        </div>
-                        <div>
-                            <label for="subject" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                            <input type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="Let us know how we can help you" required />
-                        </div>
-                        <div class="sm:col-span-2">
-                            <label for="message" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                            <textarea id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500" placeholder="Leave a comment..."></textarea>
-                        </div>
-                        <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-emerald-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
-                    </form>
-                */}
-                <a href="mailto:info@dustinlong.tech"><h3 className="text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-cyan-500">info@dustinlong.tech</h3></a>
+                <a href="mailto:info@dustinlong.tech"><h3 className="text-3xl md:text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-cyan-500">info@dustinlong.tech</h3></a>
                 </div>
             </section>
+            </div>
       </main>
     </div>
     
