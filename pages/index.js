@@ -35,8 +35,8 @@ export default function Home() {
       <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span class="text-emerald-500">DUSTIN</span><span class="text-emerald-700">LONG</span><span class="text-emerald-900">.TECH</span></span>
   </a>
   <div class="flex md:order-2 items-center justify-between">
-  <button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-light rounded-lg text-md px-3 py-2.5 text-center mr-3 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="text-2xl dark:fill-white "/></button>
-      <a href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf"><button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-green-300 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Resume</button></a>
+  <button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-lg text-md px-3 py-2.5 text-center mr-3 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800"><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="text-2xl dark:fill-white "/></button>
+      <a href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf"><button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800">Resume</button></a>
   </div>
   </div>
 </nav>
@@ -52,8 +52,8 @@ environments.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-              <a href="https://www.linkedin.com/in/dustinolong"><AiFillLinkedin /></a>
-              <a href="https://github.com/Apple-Deuce"><AiFillGithub /></a>
+              <a href="https://www.linkedin.com/in/dustinolong" class="hover:text-cyan-700 dark:hover:text-cyan-500"><AiFillLinkedin /></a>
+              <a href="https://github.com/Apple-Deuce"class="hover:text-cyan-700 dark:hover:text-cyan-500"><AiFillGithub /></a>
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96"
             style={{objectFit:"contain"}}>
@@ -90,7 +90,7 @@ environments.
 
         <section className="font-oswald text-gray-600 min-h-full">
           
-          <div className="lg:flex gap-10" style={{justifyContent: "center"}}>
+          <div className="xl:flex gap-10" style={{justifyContent: "center"}}>
           <div className="text-center shadow-2xl p-10 rounded-xl my-10">
               <div style={{
                 display:"flex",
@@ -169,22 +169,22 @@ environments.
               <div style={{
                 display:"flex",
                 justifyContent: "center",
-              }}><Image src={blocks} width={100} alt=""/></div>
+              }}><Image src={learning} width={100} alt=""/></div>
               <h3 className="text-2xl font-medium text-emerald-700 py-10">
-                Technical & Soft Skills
+                Certifications
               </h3>
               <div className="grid">
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2405390?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="text-gray-800 py-1 dark:text-slate-200">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
+              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
               </a>
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2365223?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="text-gray-800 py-1 dark:text-slate-200">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
+              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
               </a>
               <a href="https://courses.edx.org/certificates/e1bc642064304e199a552de95ebe6f8e">
-              <p className="text-gray-800 py-1 dark:text-slate-200">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
+              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
               </a>
               <a href="https://verify.skilljar.com/c/wzvspbdfxg6z">
-              <p className="text-gray-800 py-1 dark:text-slate-200">Jamf Certified Associate - Jamf</p>
+              <p className="text-gray-800 py-1 dark:text-slate-200 hover:text-cyan-700 dark:hover:text-cyan-500">Jamf Certified Associate - Jamf</p>
               </a>
               <p className="text-gray-800 py-1 dark:text-slate-200">Google Cloud Certified - GSuite - Google</p>
               </div>
@@ -194,11 +194,11 @@ environments.
 
 {/* Contact Me */}
 
-        <section class="bg-lime-50 dark:bg-gray-900 h-screen pt-56 md:pt-20">
+        <section class="bg-lime-50 dark:bg-gray-900 h-screen pt-56 md:pt-20 shadow-2xl p-10 rounded-xl my-10">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white font-oswald">Let's Talk!</h2>
-                    <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl font-oswald">Interested to know more about me? Think I could help on your project? Want to talk about video games? Let me know.</p>
-                    <form action="#" class="space-y-8">
+                    <h2 class="mb-4 text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-emerald-400 font-oswald">Let's Talk!</h2>
+                    <p class="pt-10 mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-2xl font-oswald">Interested to know more about me? Think I could help on your project? Want to talk about video games? Let me know.</p>
+                    {/* <form action="#" class="space-y-8">
                         <div>
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
                             <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light" placeholder="user@domain.com" required />
@@ -213,6 +213,8 @@ environments.
                         </div>
                         <button type="submit" class="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-emerald-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">Send message</button>
                     </form>
+                */}
+                <a href="mailto:info@dustinlong.tech"><h3 className="text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-cyan-500">info@dustinlong.tech</h3></a>
                 </div>
             </section>
       </main>
