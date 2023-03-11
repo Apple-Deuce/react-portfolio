@@ -14,6 +14,13 @@ module.exports = {
       fontFamily: {
         oswald: "oswald",
       },
+    colors: {
+      'primary': "#283618",
+      'secondary': "#606c38",
+      'solid': "#fefae0",
+      'accent-1': "#bc6c25",
+      'accent-2': "#dda15e"
+    }
     },
   },
   plugins: [],
