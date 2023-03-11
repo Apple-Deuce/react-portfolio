@@ -24,20 +24,20 @@ export default function Home() {
 
 {/* main container */}
 
-      <main className="bg-lime-50 dark:bg-gray-900 px-5 text-black font-oswald" >
+      <main className="bg-solid dark:bg-gray-900 px-5 text-black font-oswald" >
         
         
 
 {/* nav */}
 
-<nav class="bg-white px-2 sm:px-4 py-2.5 dark:bg-gray-900 from-black to-white fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
+<nav class="bg-solid px-2 sm:px-4 py-2.5 dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
   <div class="container flex flex-wrap items-center justify-between mx-auto">
   <a href="https://dustinlong.tech/" class="flex items-center text-2xl">
-      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span class="text-emerald-500">DUSTIN</span><span class="text-emerald-700">LONG</span><span class="text-emerald-900">.TECH</span></span>
+      <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white"><span class="text-accent-2">DUSTIN</span><span class="text-secondary">LONG</span><span class="text-accent-1">.TECH</span></span>
   </a>
   <div class="flex md:order-2 items-center justify-between">
-  <button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-lg text-md px-3 py-2.5 text-center mr-3 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800"><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="text-2xl dark:fill-white "/></button>
-      <a href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf"><button type="button" class="text-white bg-emerald-700 hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-cyan-300 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-cyan-800">Resume</button></a>
+  <button type="button" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-accent-2 font-light rounded-lg text-md px-3 py-2.5 text-center mr-3 dark:bg-secondary dark:hover:bg-primary dark:focus:ring-acccent-1"><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="text-2xl dark:fill-white "/></button>
+      <a href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf"><button type="button" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-accent-2 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-secondary dark:hover:bg-primary dark:focus:ring-acccent-1">Resume</button></a>
   </div>
   </div>
 </nav>
@@ -48,16 +48,16 @@ export default function Home() {
 {/* title section (initial view) */}
 <section class="one" className="min-h-full mb-10 dark:bg-gray-900">
             <div className="text-center pt-56 lg:pt-36 pb-10">
-              <h2 className="font-oswald text-6xl py-2 text-emerald-900">Dustin Long</h2>
-              <h3 className="font-oswald text-lg font-semibold py-2 dark:text-slate-100">Fullstack Engineer</h3>
+              <h2 className="font-oswald text-6xl py-2 text-primary dark:text-secondary">Dustin Long</h2>
+              <h3 className="font-oswald text-lg font-semibold py-2 text-accent-1 dark:text-accent-2">Fullstack Engineer</h3>
               <p className="font-oswald text-lg py-5 leading-8 text-gray-800 md:text-4xl md:leading-relaxed 2xl:m-10 dark:text-slate-200">
                 Using a business-minded approach to empower new levels of growth and efficiency. 4+ years experience successfully leading cross-functional projects and teams in innovative, business-driven
 environments. 
               </p>
             </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-              <a href="https://www.linkedin.com/in/dustinolong" class="hover:text-cyan-700 dark:hover:text-cyan-500"><AiFillLinkedin /></a>
-              <a href="https://github.com/Apple-Deuce"class="hover:text-cyan-700 dark:hover:text-cyan-500"><AiFillGithub /></a>
+            <div className="text-5xl flex justify-center gap-16 py-3 text-secondary">
+              <a href="https://www.linkedin.com/in/dustinolong" class="hover:text-accent-1 dark:hover:text-accent-2"><AiFillLinkedin /></a>
+              <a href="https://github.com/Apple-Deuce"class="hover:text-accent-1 dark:hover:text-accent-2"><AiFillGithub /></a>
             </div>
             <div className="relative mx-auto bg-gradient-to-b from-emerald-700 to-white rounded-full w-80 h-80 mt-10 overflow-hidden md:h-96 md:w-96"
             style={{objectFit:"contain"}}>
@@ -67,16 +67,16 @@ environments.
 
 {/*About Me*/}
 <section  class="two" id="about">
-<div className="bg-lime-50 dark:bg-gray-900 pt-56 md:pt-20 min-h-screen">
-                <h3 className="text-2xl py-5 leading-8 text-gray-800 md:text-4xl dark:text-emerald-900 m-5">Let me tell you a little more about myself.</h3>
-                <p className="text-lg py-5 leading-8 text-gray-800 md:text-2xl dark:text-emerald-900 m-5">
+<div className="pt-56 md:pt-20 min-h-screen">
+                <h3 className="text-2xl py-5 leading-8 text-accent-1 md:text-4xl dark:text-secondary m-5">Let me tell you a little more about myself.</h3>
+                <p className="text-lg py-5 leading-8 text-gray-800 md:text-2xl dark:text-slate-200 m-5">
                     I guess we should start from the beginning...
                 </p>
                 <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
                     As long as I can remember, I've loved technology. My grandmother worked at Southern Bell (which through time transformed into what we know as AT&T) and loved adopting new technology and learning in general. I guess I have her to thank for my inquisitive nature. She taught me how to how to use a computer before I could tie my shoes (that's not an exaggeration) and from there it was history. From explaining to my parents as a nine year old that we needed a new graphics card for vertex shaders or installing Windows 7 with 1GB of RAM, I was probably a bit of a nuisance. Nonetheless, I think it's paid off in the long run.
                 </p>
                 <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
-                    For the longest time I was the extended family's tech support agent, with anything from data transfers and OS installations to replacing routers and virus removal. Over time, my "clientele" grew and before I knew it I was performing break-fix work for a large group of family friends, acquantances and even our neighbor. I taught myself a bit of graphic design and then taught my high school "Intro to modern computing" classmates how to use <span className="text-emerald-700">Photoshop</span>, <span className="text-emerald-700">Illustrator</span> and <span className="text-emerald-700">Premiere Pro.</span>
+                    For the longest time I was the extended family's tech support agent, with anything from data transfers and OS installations to replacing routers and virus removal. Over time, my "clientele" grew and before I knew it I was performing break-fix work for a large group of family friends, acquantances and even our neighbor. I taught myself a bit of graphic design and then taught my high school "Intro to modern computing" classmates how to use <span className="text-primary dark:text-accent-2">Photoshop</span>, <span className="text-primary dark:text-accent-2">Illustrator</span> and <span className="text-primary dark:text-accent-2">Premiere Pro.</span>
                 </p>
                 <p className="text-lg py-2 m-5 leading-loose text-gray-800 md:text-2xl md:leading-relaxed dark:text-slate-200">
                     Fast forward to present day, I've been able to use my interest in how things work to my advantage. I've developed my skills both professionaly and personally in a wide array of environments with some truly remarkable friends and colleagues. I've worked anywhere from small, family-owned business to medium-sized MSP's and even a Fortune 500 company. All along the way I've been polishing my skills and working to become a well-rounded engineer.
@@ -95,12 +95,12 @@ environments.
         <section  class="three" className="font-oswald text-gray-600 min-h-full">
           
           <div className="xl:flex gap-10" style={{justifyContent: "center"}}>
-          <div className="text-center shadow-2xl p-10 rounded-xl my-10">
+          <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-slate-800">
               <div style={{
                 display:"flex",
                 justifyContent: "center",
               }}><Image src={cloud} width={100} alt=""/></div>
-              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+              <h3 className="text-2xl font-medium text-secondary py-10">
                 Software & Technology
               </h3>
               <div className="grid grid-cols-2 text-gray-800 dark:text-slate-200">
@@ -122,12 +122,12 @@ environments.
               <p className="py-1">ServiceNow</p>
               </div>
             </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-slate-800">
               <div style={{
                 display:"flex",
                 justifyContent: "center",
               }}><Image src={code} width={100} alt=""/></div>
-              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+              <h3 className="text-2xl font-medium text-secondary py-10">
                 Languages/Frameworks/Libraries
               </h3>
               <div className="grid grid-cols-2 text-gray-800 dark:text-slate-200">
@@ -149,12 +149,12 @@ environments.
               <p className="py-1">Powershell</p>
               </div>
             </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-slate-800">
               <div style={{
                 display:"flex",
                 justifyContent: "center",
               }}><Image src={blocks} width={100} alt=""/></div>
-              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+              <h3 className="text-2xl font-medium text-secondary py-10">
                 Technical & Soft Skills
               </h3>
               <div className="grid text-gray-800 py-1 dark:text-slate-200">
@@ -168,26 +168,26 @@ environments.
               <p className="py-1">Project Management</p>
               </div>
             </div>
-            <div className="text-center shadow-2xl p-10 rounded-xl my-10">
+            <div className="text-center shadow-2xl p-10 rounded-xl my-10 dark:bg-slate-800">
               <div style={{
                 display:"flex",
                 justifyContent: "center",
               }}><Image src={learning} width={100} alt=""/></div>
-              <h3 className="text-2xl font-medium text-emerald-700 py-10">
+              <h3 className="text-2xl font-medium text-secondary py-10">
                 Certifications
               </h3>
               <div className="grid text-gray-800 py-1 dark:text-slate-200">
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2405390?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
+              <p className="py-1 hover:text-accent-1 dark:hover:text-accent-2">Perform Foundational Infrastructure Tasks in Google Cloud - Google Cloud Skills Boost</p>
               </a>
               <a href="https://www.cloudskillsboost.google/public_profiles/8b0e2669-bd4e-4746-9421-1720dce5afd6/badges/2365223?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share">
-              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
+              <p className="py-1 hover:text-accent-1 dark:hover:text-accent-2">Create and Manage Cloud Resources - Google Cloud Skills Boost</p>
               </a>
               <a href="https://courses.edx.org/certificates/e1bc642064304e199a552de95ebe6f8e">
-              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
+              <p className="py-1 hover:text-accent-1 dark:hover:text-accent-2">MITx 6.00.1x: Introduction to Computer Science and Programming Using Python - MIT</p>
               </a>
               <a href="https://verify.skilljar.com/c/wzvspbdfxg6z">
-              <p className="py-1 hover:text-cyan-700 dark:hover:text-cyan-500">Jamf Certified Associate - Jamf</p>
+              <p className="py-1 hover:text-accent-1 dark:hover:text-accent-2">Jamf Certified Associate - Jamf</p>
               </a>
               <p className="py-1">Google Cloud Certified - GSuite - Google</p>
               </div>
@@ -197,11 +197,11 @@ environments.
 
 {/* Contact Me */}
 
-        <section class="bg-lime-50 dark:bg-gray-900 h-screen pt-56 md:pt-20 shadow-2xl p-10 rounded-xl my-10">
+        <section class=" h-2/3 pt-56 md:pt-20 shadow-2xl p-10 rounded-xl my-10 dark:bg-slate-800">
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-                    <h2 class="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-emerald-400 font-oswald">Let's Talk!</h2>
+                    <h2 class="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-accent-2 font-oswald">Let's Talk!</h2>
                     <p class="pt-10 mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-2xl font-oswald">Interested to know more about me? Think I could help on your project? Want to talk about video games? Let me know.</p>
-                <a href="mailto:info@dustinlong.tech"><h3 className="text-3xl md:text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-cyan-900">info@dustinlong.tech</h3></a>
+                <a href="mailto:info@dustinlong.tech"><h3 className="text-3xl md:text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-secondary">info@dustinlong.tech</h3></a>
                 </div>
             </section>
             </div>
