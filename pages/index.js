@@ -201,7 +201,7 @@ environments.
                 <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
                     <h2 class="mb-4 text-4xl md:text-6xl tracking-tight font-extrabold text-center text-gray-900 dark:text-accent-2 font-oswald">Let's Talk!</h2>
                     <p class="pt-10 mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-2xl font-oswald">Interested to know more about me? Think I could help on your project? Want to talk about video games? Let me know.</p>
-                <a href="mailto:info@dustinlong.tech"><h3 className="text-3xl md:text-5xl tracking-tight pt-10 font-extrabold text-center text-emerald-900 dark:text-white font-oswald hover:text-cyan-700 dark:hover:text-secondary">info@dustinlong.tech</h3></a>
+                <a href="mailto:info@dustinlong.tech"><h3 className="text-3xl md:text-5xl tracking-tight pt-10 font-extrabold text-center text-secondary dark:text-secondary font-oswald hover:text-primary dark:hover:text-accent-1">info@dustinlong.tech</h3></a>
                 </div>
             </section>
             </div>
