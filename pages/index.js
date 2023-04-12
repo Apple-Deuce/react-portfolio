@@ -37,7 +37,7 @@ export default function Home() {
   </a>
   <div class="flex md:order-2 items-center justify-between">
   <button type="button" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-accent-2 font-light rounded-lg text-md px-3 py-2.5 text-center mr-3 dark:bg-secondary dark:hover:bg-primary dark:focus:ring-acccent-1"><BsFillMoonStarsFill  onClick={() => setDarkMode(!darkMode)} className="text-2xl dark:fill-white "/></button>
-      <a href="https://storage.cloud.google.com/dustinlong-tech.appspot.com/Dustin%20Long%20Resume%202023.pdf"><button type="button" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-accent-2 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-secondary dark:hover:bg-primary dark:focus:ring-acccent-1">Resume</button></a>
+      <a href="https://storage.googleapis.com/dustinlong-tech.appspot.com/DL%20Resume%202023.pdf"><button type="button" class="text-white bg-primary hover:bg-secondary focus:ring-4 focus:outline-none focus:ring-accent-2 font-light rounded-lg text-md px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-secondary dark:hover:bg-primary dark:focus:ring-acccent-1">Resume</button></a>
   </div>
   </div>
 </nav>
